@@ -1,22 +1,28 @@
-# Responsive wireframe website
+# Sri Lanka Holiday Escapes
 
-A static HTML/CSS/JavaScript website based on the supplied wireframe.
+Responsive static website for GitHub Pages.
 
 ## Files
-- `index.html`: home page
-- `about.html`, `services.html`, `contact.html`: additional pages
-- `style.css`: responsive design
-- `script.js`: mobile menu and email enquiry
+- `index.html` homepage
+- `about.html` about page
+- `holidays.html` holiday categories
+- `contact.html` enquiry page
+- `style.css` styling
+- `script.js` menu, holiday filtering, enquiry mailto
 
-## Test locally
-Open `index.html` in a browser, click each navigation link, resize the window and test the mobile menu. For a local development server, run `python -m http.server 8000` in this folder and visit http://localhost:8000.
+## Publish
+1. Create a new public GitHub repository.
+2. Upload **the extracted files**, keeping `index.html` in the repository root.
+3. Commit changes.
+4. Open Settings > Pages > Deploy from a branch > main > /(root) > Save.
+5. Open `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/` after deployment.
 
-## Publish to GitHub Pages
-1. Create a **new public repository** on GitHub (not the MGT4017 repository).
-2. Upload the contents of this folder to the repository root (not the containing folder).
-3. Commit the files.
-4. Go to Settings > Pages > Build and deployment, choose **Deploy from a branch**, select `main` and `/(root)`, then Save.
-5. After deployment, open `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+## Test
+Open `index.html` locally in a browser; navigate all four pages, resize the browser to mobile width, use the menu, run the holiday search, and test the enquiry button. Check the live Pages site after publishing.
 
-## Customise
-Replace `LOGO`, hero text, service names, about text, and footer details in the HTML. Change colours in the `:root` section of `style.css`. Replace `hello@example.com` in `script.js` and HTML. Replace the placeholder LinkedIn URL. The contact form uses `mailto:` and **does not send messages through a server**; for reliable contact-form submissions, use a third-party form service. Add a hero image using a local file in `assets/` if desired. All internal links are relative for GitHub Pages project sites.
+## Important before public launch
+- Replace the placeholder company name, copy, and email (`YOUR_EMAIL@example.com` in `script.js`).
+- Images are externally hosted illustrative Unsplash photographs and may not all depict Sri Lanka. Replace with licensed, destination-accurate photos in `assets/` and update `src` and CSS `url()` references.
+- Do not add unverified customer ratings, travel protections, tour prices, or booking availability claims.
+- The search only filters sample categories; there is no booking engine or live inventory.
+- The contact form opens the visitor's email app and does not send data directly. For real submissions, connect a suitable form service and add an appropriate privacy notice.
